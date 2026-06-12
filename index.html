@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <meta name="description" content="灵境智能 — AI 时代的游戏工具。灵魂 NPC 与灵境工坊，构建下一代 AI 游戏世界。">
+  <meta name="description" content="灵境智能 — AI 时代的游戏工具。低延迟、高并发的灵魂 NPC 运行时，持久化记忆与情感状态机，灵境工坊场景生成管线。">
   <meta property="og:title" content="灵境智能 | AI 时代的游戏工具">
-  <meta property="og:description" content="从灵魂 NPC 到灵境工坊，让每一款游戏都拥有灵魂">
+  <meta property="og:description" content="低延迟 · 高并发 · 持久化记忆 · 状态机 — 为游戏团队构建角色智能基础设施">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +20,9 @@
     <div class="container inner">
       <a href="./" class="brand">
         <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
-          <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
-          <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
-          <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
-          <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
-          <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
-          <line x1="16" y1="9.5" x2="16" y2="22.5" stroke="#00cec9" stroke-width="0.75" opacity="0.45"/>
-          <line x1="11" y1="16" x2="21" y2="16" stroke="#00cec9" stroke-width="0.75" opacity="0.3"/>
-          <line x1="16" y1="9.5" x2="9.5" y2="16" stroke="#00cec9" stroke-width="0.5" opacity="0.35"/>
-          <line x1="16" y1="9.5" x2="22.5" y2="16" stroke="#00cec9" stroke-width="0.5" opacity="0.35"/>
+          <rect width="32" height="32" rx="4" fill="#152238" stroke="#C9A962" stroke-width="1"/>
+          <path d="M8 22 L16 8 L24 22" stroke="#C9A962" stroke-width="1.5" fill="none"/>
+          <line x1="11" y1="17" x2="21" y2="17" stroke="#C9A962" stroke-width="1"/>
         </svg>
         <div>
           <div class="brand-name">灵境智能</div>
@@ -55,119 +48,277 @@
   </header>
 
   <main>
-    <section class="hero hero-v3">
-      <div class="container hero-v3-inner fade-in">
-        <span class="eyebrow">灵境智能</span>
-        <h1 class="display-xl">AI 时代的游戏工具</h1>
-        <p class="lead hero-subtitle">
-          从灵魂 NPC 到灵境工坊，构建下一代 AI 游戏世界
-        </p>
-        <div class="hero-actions">
-          <a href="#products" class="btn btn-primary">探索产品</a>
-          <a href="about/#contact" class="btn btn-secondary">商务合作</a>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade-in">
+          <span class="eyebrow">AI 时代的游戏工具</span>
+          <h1 class="display-xl">角色智能<br>工程化落地</h1>
+          <p class="lead" style="margin-top:1.5rem">
+            灵境智能为游戏团队提供可部署的角色智能基础设施 — 低延迟运行时、高并发会话调度、
+            持久化记忆层与情感状态机。从灵境工坊内容管线到 soul_npc 运行时，覆盖研发到上线的完整链路。
+          </p>
+          <div class="hero-actions">
+            <a href="product/" class="btn btn-primary">探索产品矩阵</a>
+            <a href="about/#contact" class="btn btn-secondary">商务合作</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-cell">
+              <div class="metric-value">&lt;200ms</div>
+              <div class="metric-label">低延迟响应</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value">10K+</div>
+              <div class="metric-label">高并发会话</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value">KV</div>
+              <div class="metric-label">持久化记忆</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value">FSM</div>
+              <div class="metric-label">情感状态机</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="soul-panel">
+            <div class="soul-panel-header">
+              <h3>运行时快照</h3>
+              <span>soul_npc/v1</span>
+            </div>
+            <div class="soul-panel-body">
+              <div class="code-block" style="padding:1rem;border:none;background:transparent;font-size:0.75rem">
+<span class="comment">// runtime_context · session_id: sess_8f2a</span>
+{
+  <span class="key">"npc_id"</span>: <span class="str">"merchant_elara"</span>,
+  <span class="key">"memory"</span>: {
+    <span class="key">"episodic"</span>: [<span class="str">"trade_relic_0421"</span>, <span class="str">"trust+0.12"</span>],
+    <span class="key">"semantic"</span>: { <span class="key">"faction"</span>: <span class="str">"merchants_guild"</span> },
+    <span class="key">"player_trust"</span>: <span class="num">0.72</span>
+  },
+  <span class="key">"emotion_fsm"</span>: {
+    <span class="key">"state"</span>: <span class="str">"cautious_interest"</span>,
+    <span class="key">"valence"</span>: <span class="num">0.41</span>,
+    <span class="key">"arousal"</span>: <span class="num">0.58</span>
+  },
+  <span class="key">"latency_ms"</span>: <span class="num">168</span>
+}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="products">
+    <section class="section section-alt" id="soul-npc">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">soul_npc</span>
+          <h2 class="display-lg section-title">灵魂 NPC — 底层工程能力</h2>
+          <p class="section-desc">持久化记忆结构与情感状态机分离设计。左侧为记忆 Schema，右侧为状态转移逻辑，二者通过事件总线耦合。</p>
+        </div>
+        <div class="soul-showcase fade-in">
+          <div class="soul-panel">
+            <div class="soul-panel-header">
+              <h3>记忆层 Schema</h3>
+              <span>memory_store.json</span>
+            </div>
+            <div class="soul-panel-body">
+              <div class="code-block" style="padding:0;border:none;background:transparent;font-size:0.75rem">
+{
+  <span class="key">"version"</span>: <span class="str">"1.2.0"</span>,
+  <span class="key">"layers"</span>: {
+    <span class="key">"working"</span>: {
+      <span class="key">"ttl_sec"</span>: <span class="num">300</span>,
+      <span class="key">"fields"</span>: [<span class="str">"current_topic"</span>, <span class="str">"scene_ctx"</span>]
+    },
+    <span class="key">"episodic"</span>: {
+      <span class="key">"store"</span>: <span class="str">"vector+kv"</span>,
+      <span class="key">"retrieval"</span>: <span class="str">"top_k_semantic"</span>
+    },
+    <span class="key">"relational"</span>: {
+      <span class="key">"graph"</span>: <span class="str">"player_npc_edges"</span>,
+      <span class="key">"weights"</span>: [<span class="str">"trust"</span>, <span class="str">"affinity"</span>, <span class="str">"debt"</span>]
+    }
+  },
+  <span class="key">"persistence"</span>: {
+    <span class="key">"backend"</span>: <span class="str">"redis_cluster"</span>,
+    <span class="key">"sync_policy"</span>: <span class="str">"write_through"</span>
+  }
+}
+              </div>
+            </div>
+          </div>
+          <div class="soul-panel">
+            <div class="soul-panel-header">
+              <h3>情感状态机</h3>
+              <span>emotion_fsm.yaml</span>
+            </div>
+            <div class="soul-panel-body">
+              <div class="emotion-flow">
+                <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="200" y1="42" x2="80" y2="120" stroke="#C9A962" stroke-width="1" stroke-opacity="0.6"/>
+                  <line x1="200" y1="42" x2="320" y2="120" stroke="#C9A962" stroke-width="1" stroke-opacity="0.6"/>
+                  <line x1="80" y1="155" x2="200" y2="238" stroke="#C9A962" stroke-width="1" stroke-opacity="0.6"/>
+                  <line x1="320" y1="155" x2="200" y2="238" stroke="#C9A962" stroke-width="1" stroke-opacity="0.6"/>
+                  <line x1="80" y1="120" x2="320" y2="120" stroke="#C9A962" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+                  <polygon points="200,34 196,42 204,42" fill="#C9A962" opacity="0.6"/>
+                  <polygon points="74,128 80,120 86,128" fill="#C9A962" opacity="0.6"/>
+                  <polygon points="314,128 320,120 326,128" fill="#C9A962" opacity="0.6"/>
+                  <polygon points="196,238 200,246 204,238" fill="#C9A962" opacity="0.6"/>
+                </svg>
+                <div class="flow-node trigger">
+                  <span class="flow-node-label">INPUT</span>
+                  玩家事件
+                </div>
+                <div class="flow-node evaluate">
+                  <span class="flow-node-label">EVAL</span>
+                  记忆检索
+                </div>
+                <div class="flow-node transition">
+                  <span class="flow-node-label">TRANS</span>
+                  状态转移
+                </div>
+                <div class="flow-node output">
+                  <span class="flow-node-label">OUTPUT</span>
+                  行为决策
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workshop">
       <div class="container">
         <div class="section-header center fade-in">
-          <span class="eyebrow">核心产品</span>
-          <h2 class="display-lg section-title">两大引擎，覆盖开发与运行时</h2>
-          <p class="section-desc">从角色智能到场景生产，解决游戏团队最耗时的两类痛点。</p>
+          <span class="eyebrow">灵境工坊</span>
+          <h2 class="display-lg section-title">场景生成管线</h2>
+          <p class="section-desc">从自然语言描述到可运行 Prefab，四步网格化流程。DSL 驱动、MCP 导入、引擎直写，缩短内容迭代周期。</p>
         </div>
-        <div class="card-grid cols-2 product-showcase fade-in">
-          <article class="card product-showcase-card featured">
-            <div class="product-showcase-head">
-              <div class="product-showcase-icon">
-                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v1a3 3 0 0 1 3 3v1a2 2 0 0 1-2 2h-1l-1 5H9l-1-5H7a2 2 0 0 1-2-2v-1a3 3 0 0 1 3-3V6a4 4 0 0 1 4-4z"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg>
-              </div>
-              <div>
-                <span class="card-tag">Soul NPC</span>
-                <h3>灵魂 NPC</h3>
-              </div>
-            </div>
-            <p class="product-tagline">具备记忆、情感与自主行为的智能角色，让 NPC 真正「活着」。</p>
-            <div class="pain-block">
-              <span class="pain-label">解决痛点</span>
-              <ul class="card-list">
-                <li>台词机械重复，玩家几轮对话后即失去兴趣</li>
-                <li>角色无法记住玩家选择，叙事缺乏连贯性</li>
-                <li>情感反馈缺失，互动像在读脚本而非对话</li>
-              </ul>
-            </div>
-            <ul class="card-list product-features">
-              <li>跨会话持久记忆与关系图谱</li>
-              <li>实时情感建模驱动行为决策</li>
-              <li>场景语境感知与自主行动</li>
-            </ul>
-            <a href="product/#soul-npc" class="btn btn-accent btn-sm" style="margin-top:1.5rem">了解灵魂 NPC</a>
-          </article>
-
-          <article class="card product-showcase-card featured">
-            <div class="product-showcase-head">
-              <div class="product-showcase-icon workshop">
-                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/><path d="M14 7h3v3"/><path d="M7 7h3v3"/></svg>
-              </div>
-              <div>
-                <span class="card-tag">Lingjing Workshop</span>
-                <h3>灵境工坊</h3>
-              </div>
-            </div>
-            <p class="product-tagline">一站式 AI 场景与关卡生成、调试平台，大幅缩短内容生产周期。</p>
-            <div class="pain-block">
-              <span class="pain-label">解决痛点</span>
-              <ul class="card-list">
-                <li>场景与关卡搭建周期长，美术与策划反复返工</li>
-                <li>从概念到可玩版本迭代慢，试错成本极高</li>
-                <li>多环节协作调试困难，问题定位耗时长</li>
-              </ul>
-            </div>
-            <ul class="card-list product-features">
-              <li>AI 驱动的场景与关卡自动生成</li>
-              <li>可视化编辑与实时预览调试</li>
-              <li>从原型到可玩版本的一站式工作流</li>
-            </ul>
-            <a href="product/#lingjing-workshop" class="btn btn-accent btn-sm" style="margin-top:1.5rem">了解灵境工坊</a>
-          </article>
+        <div class="workshop-grid fade-in">
+          <div class="workshop-step">
+            <div class="workshop-step-num">01</div>
+            <h4>需求输入</h4>
+            <p>策划描述 UI 结构与交互逻辑，Agent 解析为标准化字段。</p>
+            <code>scene_brief.yaml</code>
+          </div>
+          <div class="workshop-step">
+            <div class="workshop-step-num">02</div>
+            <h4>DSL 生成</h4>
+            <p>九宫决策与组件映射，输出 v1 JSON Bundle。</p>
+            <code>bundle/dsl_v1.json</code>
+          </div>
+          <div class="workshop-step">
+            <div class="workshop-step-num">03</div>
+            <h4>Prefab 导入</h4>
+            <p>MCP import_dsl_bundle 写入编辑器，脚本绑定自动校验。</p>
+            <code>import_dsl_bundle()</code>
+          </div>
+          <div class="workshop-step">
+            <div class="workshop-step-num">04</div>
+            <h4>场景部署</h4>
+            <p>Prefab 实例化至目标场景，dumpTree 验收节点树。</p>
+            <code>preview_scene()</code>
+          </div>
+        </div>
+        <div class="workshop-meta fade-in">
+          <div class="workshop-meta-cell">
+            <strong>16</strong>
+            <span>MCP 引擎工具</span>
+          </div>
+          <div class="workshop-meta-cell">
+            <strong>&lt;30s</strong>
+            <span>Bundle → Prefab</span>
+          </div>
+          <div class="workshop-meta-cell">
+            <strong>100%</strong>
+            <span>操作可审计</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="vision-band">
-      <div class="container fade-in">
-        <span class="eyebrow">愿景</span>
-        <h2 class="display-lg vision-quote">让每一款游戏都拥有灵魂</h2>
-        <p class="vision-desc">我们相信，AI 不应只是降本增效的工具，而应成为游戏世界生命感的来源 — 从有记忆的角色，到可快速迭代的场景，让开发者专注于创造，而非重复劳动。</p>
+    <section class="section section-alt" id="solution">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">产品矩阵</span>
+          <h2 class="display-lg section-title">三层架构，从运行时到引擎</h2>
+          <p class="section-desc">soul_npc 为核心价值层，灵境工坊与 MCP 工具链为生产层，Agent Hub 为协作编排层。</p>
+        </div>
+        <div class="card-grid cols-3 fade-in">
+          <article class="card featured">
+            <div class="flex-between">
+              <span class="card-tag">soul_npc</span>
+              <span class="card-status">核心</span>
+            </div>
+            <h3>灵魂 NPC 运行时</h3>
+            <p>低延迟、高并发的角色智能服务。持久化记忆、情感状态机与语境感知对话，NPC 参与叙事而非播放台词。</p>
+            <ul class="card-list">
+              <li>持久化记忆 — Redis Cluster 写穿</li>
+              <li>情感状态机 — FSM 驱动行为决策</li>
+              <li>高并发 — 10K+ 会话并行调度</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="flex-between">
+              <span class="card-tag">灵境工坊</span>
+              <span class="card-status">生产层</span>
+            </div>
+            <h3>场景生成工坊</h3>
+            <p>DSL 驱动的 UI 生产管线。从描述到 Prefab 四步网格流程，MCP 直连 Cocos Creator 编辑器。</p>
+            <ul class="card-list">
+              <li>DSL Bundle → Prefab 自动导入</li>
+              <li>组件识别与属性绑定</li>
+              <li>操作链可审计、可回滚</li>
+            </ul>
+            <a href="product/" class="btn btn-accent btn-sm" style="margin-top:1.5rem">了解工坊</a>
+          </article>
+          <article class="card">
+            <div class="flex-between">
+              <span class="card-tag">agent_hub</span>
+              <span class="card-status soon">协作层</span>
+            </div>
+            <h3>多智能体编排</h3>
+            <p>策划、程序、测试 Agent 编排为可追踪管线，与 soul_npc 运行时形成研发闭环。</p>
+            <ul class="card-list">
+              <li>跨职能任务状态机</li>
+              <li>质量评分与验收 Gate</li>
+              <li>研发 ↔ 运行时联动</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-header center fade-in">
-          <span class="eyebrow">为什么选择灵境</span>
-          <h2 class="display-lg section-title">为游戏而生，而非通用 AI</h2>
+        <div class="section-header fade-in">
+          <span class="eyebrow">工程指标</span>
+          <h2 class="display-lg section-title">为游戏场景设计，而非通用对话</h2>
+          <p class="section-desc">参考 Inworld、NVIDIA ACE 的工程化路径：低延迟、可集成、可规模化部署。</p>
         </div>
-        <div class="card-grid cols-4 fade-in">
-          <div class="card text-center">
+        <div class="cap-grid fade-in">
+          <div class="cap-item">
             <div class="cap-num">01</div>
-            <h3>游戏场景优先</h3>
-            <p>针对 NPC 互动与关卡生产设计，而非通用聊天机器人。</p>
+            <h3>持久化记忆</h3>
+            <p>工作记忆、情节记忆与关系图谱分层存储。跨会话保持玩家选择与关系权重，构建连贯叙事语境。</p>
           </div>
-          <div class="card text-center">
+          <div class="cap-item">
             <div class="cap-num">02</div>
-            <h3>低延迟运行时</h3>
-            <p>灵魂 NPC 响应 &lt; 200ms，满足实时游戏体验要求。</p>
+            <h3>情感状态机</h3>
+            <p>FSM 建模驱动行为决策。valence / arousal 双轴量化，状态转移由玩家事件与记忆检索共同触发。</p>
           </div>
-          <div class="card text-center">
+          <div class="cap-item">
             <div class="cap-num">03</div>
-            <h3>引擎级集成</h3>
-            <p>与主流游戏引擎深度对接，接入成本低、迭代快。</p>
+            <h3>高并发调度</h3>
+            <p>Go 微服务架构，gRPC 内部通信。会话池化与连接复用，支撑万级 NPC 并行交互。</p>
           </div>
-          <div class="card text-center">
+          <div class="cap-item">
             <div class="cap-num">04</div>
-            <h3>可规模化部署</h3>
-            <p>从独立游戏到大型 MMO，架构支持多角色并发运行。</p>
+            <h3>引擎级集成</h3>
+            <p>MCP 工具链直连 Cocos Creator。灵境工坊缩短从设计到场景的迭代周期，底层能力透明接入。</p>
           </div>
         </div>
       </div>
@@ -176,18 +327,70 @@
     <section class="section section-dark">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="eyebrow">产品协同</span>
-          <h2 class="display-lg section-title">开发 × 运行时，完整闭环</h2>
-          <p class="section-desc">灵境工坊加速内容生产，灵魂 NPC 赋予角色生命 — 从制作到上线，一条链路打通。</p>
+          <span class="eyebrow">技术架构</span>
+          <h2 class="display-lg section-title">调用链 — 从工坊到运行时</h2>
+          <p class="section-desc">灵境工坊负责内容生产，soul_npc 负责运行时价值交付，MCP 为引擎桥接层。</p>
         </div>
-        <div class="stack-diagram fade-in" style="max-width:42rem;margin:0 auto">
+        <div class="stack-diagram fade-in">
           <div class="stack-layer highlight">
-            <span class="stack-num">运行时</span>
-            <div><h4>灵魂 NPC</h4><p>记忆 · 情感 · 自主行为 · 语境对话</p></div>
+            <span class="stack-num">L3</span>
+            <div><h4>灵魂 NPC 运行时</h4><p>持久化记忆 · 情感状态机 · 低延迟对话 · 行为决策</p></div>
           </div>
           <div class="stack-layer">
-            <span class="stack-num">生产</span>
-            <div><h4>灵境工坊</h4><p>AI 场景生成 · 关卡调试 · 可视化迭代</p></div>
+            <span class="stack-num">L2</span>
+            <div><h4>灵境工坊 + Agent Hub</h4><p>场景生成 · 任务编排 · 质量验收</p></div>
+          </div>
+          <div class="stack-layer">
+            <span class="stack-num">L1</span>
+            <div><h4>引擎工具链 (MCP)</h4><p>Creator 桥接 · DSL 导入 · 场景编辑</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">组织</span>
+          <h2 class="display-lg section-title">五职能协作体系</h2>
+          <p class="section-desc">围绕 AI 时代的游戏工具定位，前端、后端、测试、产品、美术分工迭代。</p>
+        </div>
+        <div class="card-grid cols-3 fade-in">
+          <div class="card team-card">
+            <span class="dept">前端</span>
+            <h3>引擎与 NPC 客户端</h3>
+            <p>Cocos Creator 架构、MCP 插件、运行时 NPC 集成。</p>
+            <div class="team-tags"><span>架构师</span><span>开发</span><span>技术美术</span></div>
+          </div>
+          <div class="card team-card">
+            <span class="dept">后端</span>
+            <h3>智能服务与平台</h3>
+            <p>持久化记忆层、情感状态机、微服务与高并发调度。</p>
+            <div class="team-tags"><span>架构师</span><span>AI 工程</span><span>平台</span></div>
+          </div>
+          <div class="card team-card">
+            <span class="dept">测试</span>
+            <h3>质量保障</h3>
+            <p>NPC 行为验收、性能压测与评分机制。</p>
+            <div class="team-tags"><span>测试</span></div>
+          </div>
+          <div class="card team-card">
+            <span class="dept">产品</span>
+            <h3>规划与商业化</h3>
+            <p>路线图、竞品分析、里程碑管理。</p>
+            <div class="team-tags"><span>制作人</span></div>
+          </div>
+          <div class="card team-card">
+            <span class="dept">美术</span>
+            <h3>视觉与品牌</h3>
+            <p>UI 规范、角色原画、品牌资产体系。</p>
+            <div class="team-tags"><span>UI 美术</span><span>角色美术</span></div>
+          </div>
+          <div class="card team-card" style="justify-content:center;text-align:center">
+            <span class="dept">领导层</span>
+            <h3>Hermes · 制作人 · 技术总监</h3>
+            <p>战略方向与技术质量监督。</p>
+            <a href="about/" class="link-accent" style="font-size:0.8125rem;margin-top:0.5rem">完整架构 →</a>
           </div>
         </div>
       </div>
@@ -195,13 +398,12 @@
 
     <section class="cta-band">
       <div class="container fade-in">
-        <h2>开启 AI 游戏世界之旅</h2>
-        <p>面向游戏开发者、发行方与技术合作伙伴。欢迎交流试点项目与定制方案。</p>
+        <h2>构建下一代游戏角色智能</h2>
+        <p>面向游戏开发者、发行方与技术合作伙伴。欢迎交流 soul_npc 试点项目与灵境工坊部署方案。</p>
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center">
-          <a href="product/" class="btn btn-primary">了解产品</a>
+          <a href="product/" class="btn btn-primary">探索产品矩阵</a>
           <a href="mailto:670924505@qq.com" class="btn btn-secondary">670924505@qq.com</a>
         </div>
-        <p class="contact-wechat">微信：diyalyin</p>
       </div>
     </section>
   </main>
@@ -212,21 +414,16 @@
         <div>
           <a href="./" class="brand">
             <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
-              <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
-              <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
-              <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
-              <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
-              <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
-              <line x1="16" y1="9.5" x2="16" y2="22.5" stroke="#00cec9" stroke-width="0.75" opacity="0.45"/>
-              <line x1="11" y1="16" x2="21" y2="16" stroke="#00cec9" stroke-width="0.75" opacity="0.3"/>
+              <rect width="32" height="32" rx="4" fill="#152238" stroke="#C9A962" stroke-width="1"/>
+              <path d="M8 22 L16 8 L24 22" stroke="#C9A962" stroke-width="1.5" fill="none"/>
+              <line x1="11" y1="17" x2="21" y2="17" stroke="#C9A962" stroke-width="1"/>
             </svg>
             <div>
               <div class="brand-name">灵境智能</div>
               <div class="brand-tag">AI 时代的游戏工具</div>
             </div>
           </a>
-          <p class="footer-desc">灵魂 NPC 与灵境工坊 — 构建下一代 AI 游戏世界。</p>
+          <p class="footer-desc">低延迟 · 高并发 · 持久化记忆 · 状态机 — 为游戏团队构建角色智能基础设施。</p>
         </div>
         <div class="footer-col">
           <h4>导航</h4>
@@ -240,7 +437,6 @@
           <h4>联系</h4>
           <ul>
             <li><a href="mailto:670924505@qq.com">670924505@qq.com</a></li>
-            <li><span>微信：diyalyin</span></li>
           </ul>
         </div>
       </div>

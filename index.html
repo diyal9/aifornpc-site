@@ -4,32 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <meta name="description" content="灵境智能 — 为游戏角色构建记忆、语境与行为系统，让 NPC 真正参与叙事。">
-  <meta property="og:title" content="灵境智能 | AI for NPC">
-  <meta property="og:description" content="游戏角色智能基础设施 — 从引擎工具链到灵魂 NPC">
+  <meta name="description" content="灵境智能 — AI NPC 解决方案。记忆层、情感计算与多智能体协作，为游戏角色赋予灵魂。">
+  <meta property="og:title" content="灵境智能 | AI NPC 解决方案">
+  <meta property="og:description" content="赋予 NPC 灵魂，构建数字世界 — 记忆、情感与多智能体协作">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
-  <title>灵境智能 | AI for NPC</title>
+  <title>灵境智能 | AI NPC 解决方案</title>
 </head>
 <body>
   <header class="site-header">
     <div class="container inner">
       <a href="./" class="brand">
-        <div class="brand-mark"><span>灵</span></div>
+        <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
+          <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
+          <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+          <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+          <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
+          <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
+          <line x1="16" y1="9.5" x2="16" y2="22.5" stroke="#00cec9" stroke-width="0.75" opacity="0.45"/>
+          <line x1="11" y1="16" x2="21" y2="16" stroke="#00cec9" stroke-width="0.75" opacity="0.3"/>
+          <line x1="16" y1="9.5" x2="9.5" y2="16" stroke="#00cec9" stroke-width="0.5" opacity="0.35"/>
+          <line x1="16" y1="9.5" x2="22.5" y2="16" stroke="#00cec9" stroke-width="0.5" opacity="0.35"/>
+        </svg>
         <div>
           <div class="brand-name">灵境智能</div>
-          <div class="brand-tag">AI for NPC</div>
+          <div class="brand-tag">AI NPC 解决方案</div>
         </div>
       </a>
       <nav class="nav-desktop">
         <a href="./" class="nav-link active">首页</a>
         <a href="product/" class="nav-link">产品</a>
         <a href="about/" class="nav-link">关于</a>
-        <a href="product/" class="btn btn-primary btn-sm">开始使用</a>
+        <a href="mailto:670924505@qq.com" class="btn btn-primary btn-sm">联系我们</a>
       </nav>
       <button id="nav-toggle" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -39,7 +50,7 @@
       <a href="./" class="active">首页</a>
       <a href="product/">产品</a>
       <a href="about/">关于</a>
-      <a href="product/" class="btn btn-primary btn-sm" style="margin-top:0.75rem;width:100%">开始使用</a>
+      <a href="mailto:670924505@qq.com" class="btn btn-primary btn-sm" style="margin-top:0.75rem;width:100%">联系我们</a>
     </div>
   </header>
 
@@ -47,97 +58,112 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="fade-in">
-          <span class="eyebrow">游戏角色智能</span>
-          <h1 class="display-xl">让角色拥有<br>可被感知的生命感</h1>
+          <span class="eyebrow">AI NPC 解决方案</span>
+          <h1 class="display-xl">赋予 NPC 灵魂<br>构建数字世界</h1>
           <p class="lead" style="margin-top:1.5rem">
-            灵境智能为游戏团队提供角色行为、记忆与对话的基础设施。
-            从 Cocos Creator 引擎工具链，到具备持续语境的 NPC 系统。
+            灵境智能为游戏团队提供完整的角色智能基础设施 — 从持久记忆与情感计算，
+            到多智能体协作运行时。MCP 引擎工具链只是底层能力之一，核心是让 NPC 真正「活着」。
           </p>
           <div class="hero-actions">
-            <a href="product/" class="btn btn-primary">了解 creator_ai</a>
-            <a href="about/" class="btn btn-secondary">公司介绍</a>
+            <a href="product/" class="btn btn-primary">探索解决方案</a>
+            <a href="about/#contact" class="btn btn-secondary">商务合作</a>
           </div>
         </div>
-        <div class="hero-visual fade-in">
-          <div class="hero-visual-grid"></div>
-          <div class="hero-visual-orb"></div>
-          <div class="hero-visual-inner">
-            <div class="hero-visual-label">
-              soul_npc · memory layer<br>
-              creator_ai · engine bridge<br>
-              latency &lt; 200ms · on-device ready
+        <div class="hero-cards fade-in">
+          <div class="hero-card hero-card-1">
+            <div class="hero-card-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
             </div>
+            <h3>记忆层</h3>
+            <p>跨会话持久记忆，角色记住玩家选择与历史互动，构建连贯叙事语境。</p>
+            <span class="hero-card-tag">memory · context · persistence</span>
+          </div>
+          <div class="hero-card hero-card-2">
+            <div class="hero-card-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>情感计算</h3>
+            <p>实时情绪建模与行为决策，让 NPC 的回应随情境变化，而非机械复读。</p>
+            <span class="hero-card-tag">emotion · affect · behavior</span>
+          </div>
+          <div class="hero-card hero-card-3">
+            <div class="hero-card-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M8.5 17.5L10.5 13M15.5 17.5L13.5 13"/></svg>
+            </div>
+            <h3>多智能体协作</h3>
+            <p>策划、程序、运行时 Agent 协同编排，从研发管线到游戏内 NPC 群像互动。</p>
+            <span class="hero-card-tag">multi-agent · orchestration</span>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="stats-row fade-in">
           <div class="stat-cell">
-            <div class="stat-value">16</div>
-            <div class="stat-label">MCP 引擎工具</div>
+            <div class="stat-value">记忆</div>
+            <div class="stat-label">持久语境层</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-value">5</div>
-            <div class="stat-label">研发职能体系</div>
+            <div class="stat-value">情感</div>
+            <div class="stat-label">实时决策引擎</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-value">3.8</div>
-            <div class="stat-label">Creator 版本支持</div>
+            <div class="stat-value">协作</div>
+            <div class="stat-label">多 Agent 编排</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-value">2026</div>
-            <div class="stat-label">品牌创立</div>
+            <div class="stat-value">&lt;200ms</div>
+            <div class="stat-label">运行时响应</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="products">
+    <section class="section section-alt" id="solution">
       <div class="container">
         <div class="section-header center fade-in">
-          <span class="eyebrow">产品矩阵</span>
-          <h2 class="display-lg section-title">三层能力，覆盖研发到运行时</h2>
-          <p class="section-desc">工具链、角色系统与协作平台分工明确，可按阶段接入。</p>
+          <span class="eyebrow">解决方案</span>
+          <h2 class="display-lg section-title">三层架构，从灵魂到引擎</h2>
+          <p class="section-desc">以 NPC 智能为核心，工具链与协作平台为支撑，覆盖研发到运行时的完整链路。</p>
         </div>
         <div class="card-grid cols-3 fade-in">
           <article class="card featured">
             <div class="flex-between">
-              <span class="card-tag">creator_ai</span>
-              <span class="card-status">已发布</span>
+              <span class="card-tag">soul_npc</span>
+              <span class="card-status">核心</span>
             </div>
-            <h3>灵境引擎</h3>
-            <p>Cocos Creator MCP 插件。将场景编辑、脚本管理、DSL 导入封装为标准化工具，供开发流程直接调用。</p>
+            <h3>灵魂 NPC 运行时</h3>
+            <p>面向游戏运行时的角色智能层。记忆持久化、情感建模与语境感知对话，让 NPC 参与叙事而非播放台词。</p>
             <ul class="card-list">
-              <li>MCP 协议直连编辑器</li>
-              <li>DSL Bundle 一键导入 Prefab</li>
-              <li>白名单字段与安全审计</li>
+              <li>跨会话记忆与关系图谱</li>
+              <li>情感状态机与行为决策</li>
+              <li>场景语境与玩家行为感知</li>
             </ul>
-            <a href="product/" class="btn btn-primary btn-sm" style="margin-top:1.5rem">查看详情</a>
           </article>
           <article class="card">
             <div class="flex-between">
-              <span class="card-tag">soul_npc</span>
-              <span class="card-status">开发中</span>
+              <span class="card-tag">creator_ai</span>
+              <span class="card-status">底层能力</span>
             </div>
-            <h3>灵魂 NPC</h3>
-            <p>面向运行时的角色智能层。为 NPC 提供性格模型、记忆持久化与语境感知的对话能力。</p>
+            <h3>引擎工具链</h3>
+            <p>Cocos Creator MCP 插件 — 16 个标准化工具直连编辑器。DSL 导入、场景编辑与脚本管理，加速内容生产。</p>
             <ul class="card-list">
-              <li>情感与行为决策</li>
-              <li>跨会话记忆</li>
-              <li>动态叙事响应</li>
+              <li>MCP 协议引擎桥接</li>
+              <li>DSL Bundle → Prefab</li>
+              <li>可审计的操作链</li>
             </ul>
+            <a href="product/" class="btn btn-accent btn-sm" style="margin-top:1.5rem">了解引擎层</a>
           </article>
           <article class="card">
             <div class="flex-between">
               <span class="card-tag">agent_hub</span>
-              <span class="card-status soon">规划中</span>
+              <span class="card-status soon">协作层</span>
             </div>
-            <h3>灵境工坊</h3>
-            <p>多职能协作研发平台。将策划、程序、美术、测试流程编排为可追踪的自动化管线。</p>
+            <h3>多智能体工坊</h3>
+            <p>将策划、程序、美术、测试 Agent 编排为可追踪的自动化管线，与运行时 NPC 智能形成闭环。</p>
             <ul class="card-list">
-              <li>任务编排与验收</li>
-              <li>质量评分机制</li>
-              <li>跨部门日报同步</li>
+              <li>跨职能任务编排</li>
+              <li>质量评分与验收</li>
+              <li>研发 ↔ 运行时联动</li>
             </ul>
           </article>
         </div>
@@ -149,28 +175,28 @@
         <div class="section-header fade-in">
           <span class="eyebrow">核心能力</span>
           <h2 class="display-lg section-title">为游戏场景设计，而非通用聊天</h2>
-          <p class="section-desc">参考 Inworld、NVIDIA ACE 等产品的工程化路径：低延迟、可集成、可规模化。</p>
+          <p class="section-desc">参考 Inworld、NVIDIA ACE 的工程化路径：低延迟、可集成、可规模化。</p>
         </div>
         <div class="cap-grid fade-in">
           <div class="cap-item">
             <div class="cap-num">01</div>
-            <h3>引擎级集成</h3>
-            <p>通过 MCP 协议直接调用 Cocos Creator API，减少人工中转，缩短从设计到场景的迭代周期。</p>
+            <h3>持久记忆层</h3>
+            <p>角色记住玩家过往选择、关系变化与关键事件，跨会话构建连贯的叙事语境。</p>
           </div>
           <div class="cap-item">
             <div class="cap-num">02</div>
-            <h3>程序化 UI 构建</h3>
-            <p>JSON DSL 描述界面结构，导入即生成 Prefab。适合批量活动页与 AI 辅助界面生产。</p>
+            <h3>情感计算引擎</h3>
+            <p>实时情绪建模驱动行为决策，NPC 的回应随情境、关系与历史动态变化。</p>
           </div>
           <div class="cap-item">
             <div class="cap-num">03</div>
-            <h3>角色语境感知</h3>
-            <p>NPC 不仅响应台词，还理解场景状态与玩家行为，支撑更连贯的叙事分支。</p>
+            <h3>多智能体协作</h3>
+            <p>研发侧 Agent 管线与运行时 NPC 群像协同，从内容生产到游戏内互动一体化。</p>
           </div>
           <div class="cap-item">
             <div class="cap-num">04</div>
-            <h3>可审计的操作链</h3>
-            <p>dryRun 预览、操作日志与白名单机制，确保自动化改动可追溯、可回滚。</p>
+            <h3>引擎级集成</h3>
+            <p>MCP 工具链直连 Cocos Creator，缩短从设计到场景的迭代周期，底层能力透明接入。</p>
           </div>
         </div>
       </div>
@@ -179,18 +205,32 @@
     <section class="section section-dark">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="eyebrow">技术栈</span>
-          <h2 class="display-lg section-title" style="color:var(--canvas)">从 Agent 到引擎，一条清晰的调用链</h2>
+          <span class="eyebrow">技术架构</span>
+          <h2 class="display-lg section-title">从 Agent 到灵魂 NPC 的调用链</h2>
+          <p class="section-desc">MCP 是引擎桥接层，灵魂 NPC 是面向玩家的价值层。</p>
         </div>
-        <div class="code-block fade-in">
-<span class="comment">// creator_ai · import_dsl_bundle</span>
+        <div class="stack-diagram fade-in">
+          <div class="stack-layer highlight">
+            <span class="stack-num">L3</span>
+            <div><h4>灵魂 NPC 运行时</h4><p>记忆 · 情感 · 对话 · 行为决策</p></div>
+          </div>
+          <div class="stack-layer">
+            <span class="stack-num">L2</span>
+            <div><h4>多智能体协作层</h4><p>Agent 编排 · 任务管线 · 质量验收</p></div>
+          </div>
+          <div class="stack-layer">
+            <span class="stack-num">L1</span>
+            <div><h4>引擎工具链 (MCP)</h4><p>Creator 桥接 · DSL 导入 · 场景编辑</p></div>
+          </div>
+        </div>
+        <div class="code-block fade-in mt-2">
+<span class="comment">// soul_npc · emotion + memory context</span>
 {
-  <span class="key">"tool"</span>: <span class="str">"import_dsl_bundle"</span>,
-  <span class="key">"params"</span>: {
-    <span class="key">"bundlePath"</span>: <span class="str">"/bundles/activity-panel"</span>
-  }
+  <span class="key">"npc_id"</span>: <span class="str">"merchant_elara"</span>,
+  <span class="key">"memory"</span>: { <span class="key">"player_trust"</span>: 0.72, <span class="key">"last_topic"</span>: <span class="str">"lost_relic"</span> },
+  <span class="key">"emotion"</span>: { <span class="key">"valence"</span>: 0.4, <span class="key">"arousal"</span>: 0.6 }
 }
-<span class="comment">// → Prefab saved: db://assets/ui/ActivityPanel.prefab</span>
+<span class="comment">// → contextual response · latency 180ms</span>
         </div>
       </div>
     </section>
@@ -200,35 +240,31 @@
         <div class="section-header center fade-in">
           <span class="eyebrow">组织</span>
           <h2 class="display-lg section-title">五职能协作体系</h2>
-          <p class="section-desc">前端、后端、测试、产品、美术分工明确，围绕同一产品路线图迭代。</p>
+          <p class="section-desc">围绕 AI NPC 解决方案，前端、后端、测试、产品、美术分工迭代。</p>
         </div>
         <div class="card-grid cols-3 fade-in">
           <div class="card team-card">
             <span class="dept">前端</span>
-            <h3>引擎与工具链</h3>
-            <p>Cocos Creator 架构、MCP 插件、UI 与渲染优化。</p>
-            <div class="team-tags">
-              <span>架构师</span><span>开发</span><span>技术美术</span>
-            </div>
+            <h3>引擎与 NPC 客户端</h3>
+            <p>Cocos Creator 架构、MCP 插件、运行时 NPC 集成。</p>
+            <div class="team-tags"><span>架构师</span><span>开发</span><span>技术美术</span></div>
           </div>
           <div class="card team-card">
             <span class="dept">后端</span>
-            <h3>服务与平台</h3>
-            <p>微服务架构、游戏逻辑、Web 平台与运营工具。</p>
-            <div class="team-tags">
-              <span>架构师</span><span>开发</span><span>平台</span>
-            </div>
+            <h3>智能服务与平台</h3>
+            <p>记忆层、情感引擎、微服务与 Agent 编排平台。</p>
+            <div class="team-tags"><span>架构师</span><span>AI 工程</span><span>平台</span></div>
           </div>
           <div class="card team-card">
             <span class="dept">测试</span>
             <h3>质量保障</h3>
-            <p>功能与性能测试、验收标准与评分机制。</p>
+            <p>NPC 行为验收、性能测试与评分机制。</p>
             <div class="team-tags"><span>测试</span></div>
           </div>
           <div class="card team-card">
             <span class="dept">产品</span>
             <h3>规划与商业化</h3>
-            <p>路线图、竞品分析、里程碑管理。</p>
+            <p>AI NPC 路线图、竞品分析、里程碑管理。</p>
             <div class="team-tags"><span>制作人</span></div>
           </div>
           <div class="card team-card">
@@ -249,11 +285,11 @@
 
     <section class="cta-band">
       <div class="container fade-in">
-        <h2>与我们一起构建下一代游戏角色</h2>
-        <p>面向游戏开发者、发行方与技术合作伙伴。欢迎交流集成方案与试点项目。</p>
+        <h2>与我们一起赋予 NPC 灵魂</h2>
+        <p>面向游戏开发者、发行方与技术合作伙伴。欢迎交流 AI NPC 集成方案与试点项目。</p>
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center">
-          <a href="product/" class="btn btn-primary">体验 creator_ai</a>
-          <a href="about/#contact" class="btn btn-secondary">商务合作</a>
+          <a href="product/" class="btn btn-primary">探索解决方案</a>
+          <a href="mailto:670924505@qq.com" class="btn btn-secondary">670924505@qq.com</a>
         </div>
       </div>
     </section>
@@ -264,13 +300,22 @@
       <div class="footer-grid">
         <div>
           <a href="./" class="brand">
-            <div class="brand-mark"><span>灵</span></div>
+            <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
+              <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
+              <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+              <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+              <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
+              <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
+              <line x1="16" y1="9.5" x2="16" y2="22.5" stroke="#00cec9" stroke-width="0.75" opacity="0.45"/>
+              <line x1="11" y1="16" x2="21" y2="16" stroke="#00cec9" stroke-width="0.75" opacity="0.3"/>
+            </svg>
             <div>
               <div class="brand-name">灵境智能</div>
-              <div class="brand-tag">AI for NPC</div>
+              <div class="brand-tag">AI NPC 解决方案</div>
             </div>
           </a>
-          <p class="footer-desc">为游戏角色构建记忆、语境与行为系统。让 NPC 参与叙事，而不只是播放台词。</p>
+          <p class="footer-desc">记忆层、情感计算与多智能体协作 — 为游戏角色构建可被感知的生命感。</p>
         </div>
         <div class="footer-col">
           <h4>导航</h4>
@@ -281,17 +326,15 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>产品</h4>
+          <h4>联系</h4>
           <ul>
-            <li><span>creator_ai · 灵境引擎</span></li>
-            <li><span>soul_npc · 灵魂 NPC</span></li>
-            <li><span>agent_hub · 灵境工坊</span></li>
+            <li><a href="mailto:670924505@qq.com">670924505@qq.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 灵境智能 (AI for NPC)</span>
-        <span>成立于 2026-06-12</span>
+        <span>© 2026 灵境智能</span>
+        <span>AI NPC 解决方案</span>
       </div>
     </div>
   </footer>

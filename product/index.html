@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <meta name="description" content="creator_ai — Cocos Creator MCP 插件，16 个标准化工具直连游戏引擎。">
+  <meta name="description" content="灵境智能 AI NPC 解决方案 — 灵魂 NPC 运行时、记忆层、情感计算与引擎工具链。">
   <meta property="og:title" content="产品 | 灵境智能">
-  <meta property="og:description" content="creator_ai MCP 插件 — 让开发流程直接调用 Cocos Creator">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,10 +16,19 @@
   <header class="site-header">
     <div class="container inner">
       <a href="../" class="brand">
-        <div class="brand-mark"><span>灵</span></div>
+        <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
+          <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
+          <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+          <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+          <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
+          <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
+          <line x1="16" y1="9.5" x2="16" y2="22.5" stroke="#00cec9" stroke-width="0.75" opacity="0.45"/>
+          <line x1="11" y1="16" x2="21" y2="16" stroke="#00cec9" stroke-width="0.75" opacity="0.3"/>
+        </svg>
         <div>
           <div class="brand-name">灵境智能</div>
-          <div class="brand-tag">AI for NPC</div>
+          <div class="brand-tag">AI NPC 解决方案</div>
         </div>
       </a>
       <nav class="nav-desktop">
@@ -43,21 +51,64 @@
   <main>
     <section class="page-hero">
       <div class="container fade-in">
-        <span class="eyebrow">creator_ai · 灵境引擎</span>
-        <h1 class="display-xl">Cocos Creator<br>引擎桥接层</h1>
+        <span class="eyebrow">AI NPC 解决方案</span>
+        <h1 class="display-xl">从灵魂到引擎<br>完整产品矩阵</h1>
         <p class="lead" style="margin-top:1.25rem">
-          基于 MCP（Model Context Protocol）的编辑器插件。
-          将场景、资源、脚本操作封装为 16 个标准化工具，接入现有开发流程。
+          以 soul_npc 运行时为核心，记忆层与情感计算驱动角色行为；
+          creator_ai MCP 工具链提供引擎级底层能力；agent_hub 编排多智能体协作。
         </p>
         <div class="hero-actions">
           <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-primary">GitHub 仓库</a>
-          <a href="../about/" class="btn btn-secondary">技术文档</a>
+          <a href="mailto:670924505@qq.com" class="btn btn-secondary">商务咨询</a>
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container">
+        <div class="card-grid cols-3 fade-in">
+          <article class="card featured">
+            <span class="card-tag">soul_npc</span>
+            <h3>灵魂 NPC 运行时</h3>
+            <p>面向游戏运行时的角色智能核心。持久记忆、情感建模与语境感知对话。</p>
+            <ul class="card-list">
+              <li>跨会话记忆与关系图谱</li>
+              <li>情感状态机驱动行为</li>
+              <li>场景语境与玩家感知</li>
+              <li>运行时响应 &lt; 200ms</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card-tag">creator_ai · 底层能力</span>
+            <h3>灵境引擎 MCP</h3>
+            <p>Cocos Creator 编辑器插件，16 个标准化工具直连引擎 API。</p>
+            <ul class="card-list">
+              <li>MCP 协议引擎桥接</li>
+              <li>DSL Bundle → Prefab</li>
+              <li>白名单与安全审计</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card-tag">agent_hub</span>
+            <h3>多智能体工坊</h3>
+            <p>研发侧 Agent 编排平台，与运行时 NPC 智能形成闭环。</p>
+            <ul class="card-list">
+              <li>跨职能任务编排</li>
+              <li>质量评分机制</li>
+              <li>研发 ↔ 运行时联动</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">creator_ai · 引擎层</span>
+          <h2 class="display-lg section-title">MCP 工具 — 底层能力之一</h2>
+          <p class="section-desc">加速内容生产与引擎集成，服务于 soul_npc 运行时部署。</p>
+        </div>
         <div class="card-grid cols-4 fade-in">
           <div class="card">
             <h3>零配置启动</h3>
@@ -69,7 +120,7 @@
           </div>
           <div class="card">
             <h3>DSL 驱动</h3>
-            <p>JSON DSL 描述 UI 结构，Bundle 导入即生成 Prefab，适合批量界面生产。</p>
+            <p>JSON DSL 描述 UI 结构，Bundle 导入即生成 Prefab。</p>
           </div>
           <div class="card">
             <h3>安全可控</h3>
@@ -79,11 +130,11 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-alt">
       <div class="container">
         <div class="section-header center fade-in">
           <span class="eyebrow">快速开始</span>
-          <h2 class="display-lg section-title">三步完成接入</h2>
+          <h2 class="display-lg section-title">三步接入引擎工具链</h2>
         </div>
         <div class="steps fade-in">
           <div class="step">
@@ -100,73 +151,52 @@
           </div>
           <div class="step">
             <div class="step-num">03</div>
-            <h3>连接端点</h3>
-            <p>配置开发工具连接本地 SSE 端点。</p>
-            <code>http://localhost:3105/sse</code>
+            <h3>连接 Agent</h3>
+            <p>配置 MCP 客户端指向本地 SSE 端点。</p>
+            <code>http://127.0.0.1:3000/sse</code>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section">
       <div class="container">
         <div class="section-header center fade-in">
           <span class="eyebrow">MCP 工具</span>
-          <h2 class="display-lg section-title">16 个标准化工具</h2>
-          <p class="section-desc">覆盖基础、场景、资源、开发与诊断五类能力。</p>
-        </div>
-        <div class="card-grid cols-4 fade-in" style="margin-bottom:1.5rem">
-          <span class="tool-cat" style="padding:0.5rem 0">基础 · 2</span>
-          <span class="tool-cat" style="padding:0.5rem 0">场景 · 6</span>
-          <span class="tool-cat" style="padding:0.5rem 0">资源 · 3</span>
-          <span class="tool-cat" style="padding:0.5rem 0">开发 · 3 · 诊断 · 2</span>
+          <h2 class="display-lg section-title">16 个引擎工具</h2>
         </div>
         <div class="card-grid cols-4 fade-in">
-          <div class="tool-card"><div class="flex-between"><code>ping</code><span class="tool-cat">基础</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">健康检查，验证 MCP 连接。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>get_project_info</code><span class="tool-cat">基础</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取项目名称、路径与引擎版本。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>get_editor_context</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取编辑器场景上下文。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>query_scene_hierarchy</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">查询节点树结构（深度上限 5）。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>query_node_state</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">按 UUID 查询节点属性摘要。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>apply_node_patch</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">白名单字段批量修改，支持 dryRun。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>save_editor_scene</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">保存当前场景或 Prefab。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>toggle_project_preview</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">启动或刷新游戏预览。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>list_assets</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">列出 db:// 目录资源。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>import_dsl_bundle</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">导入 DSL Bundle 生成 Prefab。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>get_last_dsl_log</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取最近 DSL 导入日志。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>script_manager</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">TypeScript 脚本 CRUD 与编译。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>component_manager</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">组件挂载、属性读写、节点操作。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>engine_control</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">引擎状态、脚本刷新、缓存清理。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>console_reader</code><span class="tool-cat">诊断</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">读取控制台日志，支持过滤。</p></div>
-          <div class="tool-card"><div class="flex-between"><code>scene_file_editor</code><span class="tool-cat">诊断</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">直接读写 .scene JSON 文件。</p></div>
+          <div class="tool-card"><span class="tool-cat">场景</span><code>get_scene_hierarchy</code></div>
+          <div class="tool-card"><span class="tool-cat">场景</span><code>create_node</code></div>
+          <div class="tool-card"><span class="tool-cat">场景</span><code>set_node_property</code></div>
+          <div class="tool-card"><span class="tool-cat">Prefab</span><code>import_dsl_bundle</code></div>
+          <div class="tool-card"><span class="tool-cat">Prefab</span><code>open_prefab</code></div>
+          <div class="tool-card"><span class="tool-cat">Prefab</span><code>save_prefab</code></div>
+          <div class="tool-card"><span class="tool-cat">资源</span><code>query_assets</code></div>
+          <div class="tool-card"><span class="tool-cat">资源</span><code>import_asset</code></div>
+          <div class="tool-card"><span class="tool-cat">脚本</span><code>read_script</code></div>
+          <div class="tool-card"><span class="tool-cat">脚本</span><code>write_script</code></div>
+          <div class="tool-card"><span class="tool-cat">脚本</span><code>attach_component</code></div>
+          <div class="tool-card"><span class="tool-cat">预览</span><code>preview_scene</code></div>
+          <div class="tool-card"><span class="tool-cat">预览</span><code>dump_tree</code></div>
+          <div class="tool-card"><span class="tool-cat">系统</span><code>get_project_info</code></div>
+          <div class="tool-card"><span class="tool-cat">系统</span><code>execute_menu</code></div>
+          <div class="tool-card"><span class="tool-cat">系统</span><code>get_operation_log</code></div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="container">
-        <div class="section-header center fade-in">
-          <span class="eyebrow">架构</span>
-          <h2 class="display-lg section-title" style="color:var(--canvas)">MCP 通信模型</h2>
-        </div>
-        <div class="diagram fade-in" style="text-align:center">
-┌─────────────┐     SSE/HTTP      ┌──────────────────┐
-│  Dev Agent  │ ◄──────────────► │  creator_ai MCP  │
-│  (Cursor)   │   MCP Protocol    │  Server :3105    │
-└─────────────┘                   └────────┬─────────┘
-                                           │ Editor API
-                                  ┌────────▼─────────┐
-                                  │ Cocos Creator    │
-                                  │ 3.8.8 Editor     │
-                                  └──────────────────┘
+        <p class="text-center fade-in" style="margin-top:2rem;font-size:0.875rem;color:var(--ink-muted)">
+          完整文档与源码见 GitHub 仓库
+        </p>
+        <div class="text-center fade-in" style="margin-top:1rem">
+          <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-accent">前往 GitHub</a>
         </div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container fade-in">
-        <h2>准备接入你的项目？</h2>
-        <p>查看仓库 README 获取完整安装说明，或通过邮件联系我们获取试点支持。</p>
-        <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-accent">前往 GitHub</a>
+        <h2>需要 AI NPC 集成方案？</h2>
+        <p>联系我们讨论 soul_npc 试点项目与引擎工具链部署。</p>
+        <a href="mailto:670924505@qq.com" class="btn btn-primary">670924505@qq.com</a>
       </div>
     </section>
   </main>
@@ -176,15 +206,22 @@
       <div class="footer-grid">
         <div>
           <a href="../" class="brand">
-            <div class="brand-mark"><span>灵</span></div>
-            <div><div class="brand-name">灵境智能</div><div class="brand-tag">AI for NPC</div></div>
+            <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="6" fill="#0f1d32" stroke="rgba(0,206,201,0.25)" stroke-width="0.5"/>
+              <circle cx="16" cy="7.5" r="2" fill="#00cec9"/>
+              <circle cx="9.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+              <circle cx="22.5" cy="16" r="1.75" fill="#00cec9" opacity="0.85"/>
+              <circle cx="16" cy="24.5" r="2" fill="#00cec9"/>
+              <circle cx="16" cy="16" r="3.5" stroke="#00cec9" stroke-width="1.25" fill="none" opacity="0.9"/>
+            </svg>
+            <div><div class="brand-name">灵境智能</div><div class="brand-tag">AI NPC 解决方案</div></div>
           </a>
-          <p class="footer-desc">为游戏角色构建记忆、语境与行为系统。</p>
+          <p class="footer-desc">记忆层、情感计算与多智能体协作。</p>
         </div>
         <div class="footer-col"><h4>导航</h4><ul><li><a href="../">首页</a></li><li><a href="./">产品</a></li><li><a href="../about/">关于</a></li></ul></div>
-        <div class="footer-col"><h4>产品</h4><ul><li><span>creator_ai</span></li><li><span>soul_npc</span></li><li><span>agent_hub</span></li></ul></div>
+        <div class="footer-col"><h4>联系</h4><ul><li><a href="mailto:670924505@qq.com">670924505@qq.com</a></li></ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 灵境智能</span><span>成立于 2026-06-12</span></div>
+      <div class="footer-bottom"><span>© 2026 灵境智能</span><span>AI NPC 解决方案</span></div>
     </div>
   </footer>
   <script src="../assets/site.js"></script>

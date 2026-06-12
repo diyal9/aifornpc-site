@@ -1,4 +1,4 @@
-/* 灵境智能 — AI NPC 解决方案 · 深色科技风 */
+/* 灵境智能 — AI 时代的游戏工具 · 深色科技风 */
 :root {
   --bg-deep: #0a1628;
   --bg-elevated: #0f1d32;
@@ -858,3 +858,147 @@ a { color: inherit; text-decoration: none; }
 
 .mt-2 { margin-top: 2rem; }
 .text-center { text-align: center; }
+
+/* —— V3 Hero —— */
+.hero-v3 {
+  padding: calc(4rem + 4rem) 0 calc(var(--section-y) + 1rem);
+  text-align: center;
+}
+
+.hero-v3-inner {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.hero-v3 .lead,
+.hero-subtitle {
+  margin: 1.5rem auto 0;
+  max-width: 32rem;
+  font-size: 1.25rem;
+}
+
+.hero-v3 .hero-actions {
+  justify-content: center;
+}
+
+/* —— Product Showcase —— */
+.product-showcase-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-showcase-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.product-showcase-head h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.product-showcase-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--accent-dim);
+  color: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 24px rgba(0, 206, 201, 0.12);
+}
+
+.product-showcase-icon.workshop {
+  background: rgba(108, 92, 231, 0.15);
+  color: #a29bfe;
+  box-shadow: 0 0 24px rgba(108, 92, 231, 0.12);
+}
+
+.product-tagline {
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.pain-block {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.pain-label {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fbbf24;
+  margin-bottom: 0.25rem;
+}
+
+.product-features .card-list li::before {
+  content: "✓";
+  color: var(--accent);
+}
+
+/* —— Vision Band —— */
+.vision-band {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 29, 50, 0.6);
+}
+
+.vision-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vision-band .container {
+  position: relative;
+}
+
+.vision-quote {
+  margin: 0.5rem 0 1.25rem;
+  font-family: var(--font-display);
+  background: linear-gradient(135deg, var(--ink) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vision-desc {
+  max-width: 36rem;
+  margin: 0 auto;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+/* —— Contact WeChat —— */
+.contact-wechat {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  position: relative;
+}
+
+/* —— Product Detail —— */
+.product-detail-header {
+  max-width: 36rem;
+}

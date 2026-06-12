@@ -20,9 +20,9 @@
     <div class="container inner">
       <a href="./" class="brand">
         <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="4" fill="#071525" stroke="#2dd4bf" stroke-width="1"/>
-          <path d="M8 22 L16 8 L24 22" stroke="#2dd4bf" stroke-width="1.5" fill="none"/>
-          <line x1="11" y1="17" x2="21" y2="17" stroke="#5eead4" stroke-width="1"/>
+          <rect width="32" height="32" rx="4" fill="#f7f5f0" stroke="#0d5c63" stroke-width="1"/>
+          <path d="M8 22 L16 8 L24 22" stroke="#0d5c63" stroke-width="1.5" fill="none"/>
+          <line x1="11" y1="17" x2="21" y2="17" stroke="#1b2a41" stroke-width="1"/>
         </svg>
         <div>
           <div class="brand-name">灵境智能</div>
@@ -49,7 +49,6 @@
 
   <main>
     <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="fade-in">
           <span class="eyebrow">AI 时代的游戏工具</span>
@@ -82,32 +81,37 @@
           </div>
         </div>
         <div class="fade-in">
-          <div class="energy-visual">
-            <canvas id="data-stream-canvas" class="data-stream-canvas" aria-hidden="true"></canvas>
-            <div class="energy-core-ring" aria-hidden="true"></div>
-            <div class="stream-card">
-              <div class="stream-card-label">TRUST</div>
-              <div class="stream-card-value">0.72</div>
-            </div>
-            <div class="stream-card">
-              <div class="stream-card-label">LATENCY</div>
-              <div class="stream-card-value">168ms</div>
-            </div>
-            <div class="stream-card">
-              <div class="stream-card-label">STATE</div>
-              <div class="stream-card-value">interest</div>
-            </div>
-            <div class="stream-card">
-              <div class="stream-card-label">MEMORY</div>
-              <div class="stream-card-value">3 layers</div>
-            </div>
-            <div class="runtime-panel glass">
-              <div class="soul-panel-header">
-                <h3>运行时快照</h3>
-                <span>soul_npc/v1</span>
+          <div class="hero-visual">
+            <div class="wireframe-panel">
+              <div class="wireframe-header">soul_npc · runtime_ui_wireframe</div>
+              <div class="wireframe-body">
+                <div class="wireframe-layout">
+                  <div class="wireframe-sidebar">
+                    <div class="wireframe-box accent">NPC 列表</div>
+                    <div class="wireframe-line short"></div>
+                    <div class="wireframe-line"></div>
+                    <div class="wireframe-line medium"></div>
+                  </div>
+                  <div class="wireframe-main">
+                    <div class="wireframe-box">对话面板 · merchant_elara</div>
+                    <div class="wireframe-line"></div>
+                    <div class="wireframe-line medium"></div>
+                    <div class="wireframe-line short"></div>
+                    <div class="wireframe-box accent">情感状态 · cautious_interest</div>
+                  </div>
+                </div>
+                <div class="wireframe-flow">
+                  <span class="wireframe-node">玩家事件</span>
+                  <span class="wireframe-arrow">→</span>
+                  <span class="wireframe-node">记忆检索</span>
+                  <span class="wireframe-arrow">→</span>
+                  <span class="wireframe-node">FSM 转移</span>
+                  <span class="wireframe-arrow">→</span>
+                  <span class="wireframe-node">行为输出</span>
+                </div>
               </div>
-              <div class="soul-panel-body">
-                <div class="code-block" style="padding:1rem;border:none;background:transparent;font-size:0.75rem;box-shadow:none">
+            </div>
+            <div class="code-block" style="font-size:0.75rem">
 <span class="comment">// runtime_context · session_id: sess_8f2a</span>
 {
   <span class="key">"npc_id"</span>: <span class="str">"merchant_elara"</span>,
@@ -121,8 +125,6 @@
   },
   <span class="key">"latency_ms"</span>: <span class="num">168</span>
 }
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -143,7 +145,7 @@
               <span>memory_store.json</span>
             </div>
             <div class="soul-panel-body">
-              <div class="code-block" style="padding:0;border:none;background:transparent;font-size:0.75rem;box-shadow:none">
+              <div class="code-block" style="padding:0;border:none;background:transparent;font-size:0.75rem">
 {
   <span class="key">"version"</span>: <span class="str">"1.2.0"</span>,
   <span class="key">"layers"</span>: {
@@ -429,9 +431,9 @@
         <div>
           <a href="./" class="brand">
             <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="4" fill="#071525" stroke="#2dd4bf" stroke-width="1"/>
-              <path d="M8 22 L16 8 L24 22" stroke="#2dd4bf" stroke-width="1.5" fill="none"/>
-              <line x1="11" y1="17" x2="21" y2="17" stroke="#5eead4" stroke-width="1"/>
+              <rect width="32" height="32" rx="4" fill="#f7f5f0" stroke="#0d5c63" stroke-width="1"/>
+              <path d="M8 22 L16 8 L24 22" stroke="#0d5c63" stroke-width="1.5" fill="none"/>
+              <line x1="11" y1="17" x2="21" y2="17" stroke="#1b2a41" stroke-width="1"/>
             </svg>
             <div>
               <div class="brand-name">灵境智能</div>

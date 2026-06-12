@@ -89,18 +89,19 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 1.25rem;
 }
 
-/* "核心产品" eyebrow 渐变装饰线 */
+/* eyebrow 渐变装饰线 — 居中 · 柔和三段渐变 */
 .eyebrow-product {
   position: relative;
 }
 .eyebrow-product::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 40px;
-  height: 2px;
-  background: linear-gradient(to right, var(--accent), transparent);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 72px;
+  height: 1.5px;
+  background: linear-gradient(to right, var(--accent) 0%, color-mix(in srgb, var(--accent) 45%, transparent) 60%, transparent 100%);
   border-radius: 1px;
 }
 

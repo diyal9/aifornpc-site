@@ -179,17 +179,6 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-contact:hover { color: var(--accent); }
 
-/* 移动端商务合作链接 */
-.nav-contact-mobile {
-  display: block;
-  padding: 0.625rem 0;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--ink-muted);
-  transition: color 0.15s;
-}
-.nav-contact-mobile:hover { color: var(--accent); }
-
 .nav-toggle {
   display: flex;
   padding: 0.5rem;
@@ -214,13 +203,26 @@ a { color: inherit; text-decoration: none; }
 
 .nav-mobile a {
   display: block;
-  padding: 0.625rem 0;
+  padding: 0.75rem 0;
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--ink-muted);
+  transition: color 0.15s;
+}
+
+.nav-mobile a:hover {
+  color: var(--accent);
 }
 
 .nav-mobile a.active { color: var(--accent); }
+
+/* 移动端商务合作 — 与桌面端 nav-link 一致的文字链接 */
+.nav-mobile .nav-contact-mobile {
+  padding-top: 1rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--ink-muted);
+}
 
 /* —— Buttons —— */
 .btn {

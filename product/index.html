@@ -1,450 +1,192 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="description" content="creator_ai — Cocos Creator MCP 插件，16 个工具让 AI 直接操控游戏引擎">
-    <meta name="keywords" content="AI, NPC, 游戏, 灵境智能, AI for NPC, MCP, 游戏开发">
-    <meta name="author" content="灵境智能 (AI for NPC)">
-    <meta property="og:title" content="产品">
-    <meta property="og:description" content="creator_ai — Cocos Creator MCP 插件，16 个工具让 AI 直接操控游戏引擎">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="zh_CN">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <title>产品 | 灵境智能</title>
-  <link rel="stylesheet" href="/ai-npc-workspace/_astro/about.b0782aa0.css" /><script type="module">function f(){const n=document.getElementById("particle-canvas");if(!n)return;const e=n.getContext("2d");if(!e)return;const r=()=>{const o=n.parentElement;o&&(n.width=o.offsetWidth,n.height=o.offsetHeight)};r(),window.addEventListener("resize",r);const i=[],l=["#6c5ce7","#00cec9","#6c5ce7"];for(let o=0;o<60;o++)i.push({x:Math.random()*n.width,y:Math.random()*n.height,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,size:Math.random()*2+.5,color:l[Math.floor(Math.random()*l.length)]});function s(){if(e){e.clearRect(0,0,n.width,n.height);for(let o=0;o<i.length;o++){const t=i[o];t.x+=t.vx,t.y+=t.vy,(t.x<0||t.x>n.width)&&(t.vx*=-1),(t.y<0||t.y>n.height)&&(t.vy*=-1),e.beginPath(),e.arc(t.x,t.y,t.size,0,Math.PI*2),e.fillStyle=t.color,e.globalAlpha=.6,e.fill();for(let c=o+1;c<i.length;c++){const a=i[c],d=t.x-a.x,h=t.y-a.y,m=Math.sqrt(d*d+h*h);m<120&&(e.beginPath(),e.moveTo(t.x,t.y),e.lineTo(a.x,a.y),e.strokeStyle="#6c5ce7",e.globalAlpha=.08*(1-m/120),e.stroke())}}requestAnimationFrame(s)}}s()}f();document.addEventListener("astro:page-load",f);const g=document.getElementById("mobile-menu-btn"),y=document.getElementById("mobile-menu");g?.addEventListener("click",()=>{y?.classList.toggle("hidden")});
-</script></head>
-  <body>
-    <div class="min-h-screen flex flex-col">
-      <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a href="/ai-npc-workspace/" class="flex items-center gap-3 group">
-        <img src="/ai-npc-workspace/logo.svg" alt="灵境智能 Logo" class="w-9 h-9 transition-transform group-hover:scale-110">
-        <div class="hidden sm:block">
-          <span class="text-lg font-bold text-white">灵境智能</span>
-          <span class="block text-xs text-gray-500 font-mono">AI for NPC</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta name="description" content="creator_ai — Cocos Creator MCP 插件，16 个标准化工具直连游戏引擎。">
+  <meta property="og:title" content="产品 | 灵境智能">
+  <meta property="og:description" content="creator_ai MCP 插件 — 让开发流程直接调用 Cocos Creator">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+  <title>产品 | 灵境智能</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <a href="../" class="brand">
+        <div class="brand-mark"><span>灵</span></div>
+        <div>
+          <div class="brand-name">灵境智能</div>
+          <div class="brand-tag">AI for NPC</div>
         </div>
       </a>
-
-      <div class="hidden md:flex items-center gap-8">
-        <a href="/ai-npc-workspace/" class="nav-link text-sm font-medium py-1">
-            首页
-          </a><a href="/ai-npc-workspace/product" class="nav-link text-sm font-medium py-1 text-white !after:w-full">
-            产品
-          </a><a href="/ai-npc-workspace/about" class="nav-link text-sm font-medium py-1">
-            关于
-          </a>
-        <a href="/ai-npc-workspace/product" class="cta-button text-white text-sm !px-5 !py-2">
-          开始使用
-        </a>
-      </div>
-
-      <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white transition-colors" aria-label="打开菜单">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
+      <nav class="nav-desktop">
+        <a href="../" class="nav-link">首页</a>
+        <a href="./" class="nav-link active">产品</a>
+        <a href="../about/" class="nav-link">关于</a>
+        <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-primary btn-sm">GitHub</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
-
-    <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-white/5 mt-2 pt-4">
-      <a href="/ai-npc-workspace/" class="block py-2.5 px-2 text-sm font-medium transition-colors text-gray-400 hover:text-white">
-          首页
-        </a><a href="/ai-npc-workspace/product" class="block py-2.5 px-2 text-sm font-medium transition-colors text-brand-cyan">
-          产品
-        </a><a href="/ai-npc-workspace/about" class="block py-2.5 px-2 text-sm font-medium transition-colors text-gray-400 hover:text-white">
-          关于
-        </a>
-      <a href="/ai-npc-workspace/product" class="cta-button text-white text-sm mt-3 w-full justify-center">
-        开始使用
-      </a>
+    <div id="nav-mobile" class="nav-mobile container">
+      <a href="../">首页</a>
+      <a href="./" class="active">产品</a>
+      <a href="../about/">关于</a>
     </div>
-  </nav>
-</header>
-      <main class="flex-1">
-        
-  
-  <section class="relative pt-32 pb-20 overflow-hidden">
-    <div class="particle-bg absolute inset-0 overflow-hidden pointer-events-none ">
-  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl animate-pulse-slow"></div>
-  <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-cyan/15 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-purple/5 rounded-full blur-3xl"></div>
-  <canvas id="particle-canvas" class="absolute inset-0 w-full h-full opacity-40"></canvas>
-</div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-      <div class="max-w-3xl">
-        <span class="inline-block px-4 py-1.5 mb-4 text-sm font-mono text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 rounded-full">
-          creator_ai · 灵境引擎
-        </span>
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="gradient-text">让 AI 直接操控 Cocos Creator</span>
-        </h1>
-        <p class="text-lg text-gray-400 leading-relaxed mb-8">
-          creator_ai 是基于 MCP（Model Context Protocol）协议的 Cocos Creator 编辑器插件。
-          它将引擎 API 封装为 16 个标准化工具，让 Cursor、Claude 等 AI Agent 能够读取场景、编辑节点、
-          管理脚本、导入 DSL Bundle — 真正实现 AI 驱动的游戏开发。
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container fade-in">
+        <span class="eyebrow">creator_ai · 灵境引擎</span>
+        <h1 class="display-xl">Cocos Creator<br>引擎桥接层</h1>
+        <p class="lead" style="margin-top:1.25rem">
+          基于 MCP（Model Context Protocol）的编辑器插件。
+          将场景、资源、脚本操作封装为 16 个标准化工具，接入现有开发流程。
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="cta-button text-white text-sm">
-            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            GitHub 仓库
-          </a>
-          <a href="/ai-npc-workspace/about" class="cta-button-outline text-sm">
-            技术文档
-          </a>
+        <div class="hero-actions">
+          <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-primary">GitHub 仓库</a>
+          <a href="../about/" class="btn btn-secondary">技术文档</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="py-16 bg-brand-light/20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="glass-card p-6 text-center">
-            <div class="text-3xl mb-3">🚀</div>
-            <h3 class="text-white font-semibold mb-2">零配置启动</h3>
-            <p class="text-gray-400 text-sm">安装插件后，通过 Creator 菜单一键启动 MCP 服务，AI Agent 即可连接。</p>
-          </div><div class="glass-card p-6 text-center">
-            <div class="text-3xl mb-3">🎮</div>
-            <h3 class="text-white font-semibold mb-2">全场景覆盖</h3>
-            <p class="text-gray-400 text-sm">支持场景编辑、Prefab 编辑、资源管理、脚本开发等完整工作流。</p>
-          </div><div class="glass-card p-6 text-center">
-            <div class="text-3xl mb-3">📐</div>
-            <h3 class="text-white font-semibold mb-2">DSL 驱动</h3>
-            <p class="text-gray-400 text-sm">JSON DSL 描述 UI，AI 生成 Bundle 后一键导入为 Cocos Prefab。</p>
-          </div><div class="glass-card p-6 text-center">
-            <div class="text-3xl mb-3">🛡️</div>
-            <h3 class="text-white font-semibold mb-2">安全可控</h3>
-            <p class="text-gray-400 text-sm">白名单字段修改、dryRun 预览、操作日志，确保 AI 操作可审计。</p>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card-grid cols-4 fade-in">
+          <div class="card">
+            <h3>零配置启动</h3>
+            <p>安装插件后，通过 Creator 菜单启动 MCP 服务，本地 SSE 端点即可连接。</p>
           </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 md:mb-16">
-  <span class="inline-block px-4 py-1.5 mb-4 text-sm font-mono text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 rounded-full">
-      快速开始
-    </span>
-  <h2 class="section-title">
-    <span class="gradient-text">三步接入 MCP</span>
-  </h2>
-  <p class="section-subtitle">从安装到 AI 操控引擎，只需几分钟</p>
-</div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="glass-card p-6 relative">
-            <span class="text-5xl font-bold text-brand-purple/20 absolute top-4 right-4">01</span>
-            <h3 class="text-lg font-semibold text-white mb-3">安装插件</h3>
-            <code class="text-sm text-brand-cyan font-mono bg-black/30 px-3 py-2 rounded-lg block">
-              client/extensions/creator_ai/
-            </code>
-          </div><div class="glass-card p-6 relative">
-            <span class="text-5xl font-bold text-brand-purple/20 absolute top-4 right-4">02</span>
-            <h3 class="text-lg font-semibold text-white mb-3">启动 MCP 服务</h3>
-            <code class="text-sm text-brand-cyan font-mono bg-black/30 px-3 py-2 rounded-lg block">
-              AI Tools → MCP 服务 → 启动
-            </code>
-          </div><div class="glass-card p-6 relative">
-            <span class="text-5xl font-bold text-brand-purple/20 absolute top-4 right-4">03</span>
-            <h3 class="text-lg font-semibold text-white mb-3">连接 AI Agent</h3>
-            <code class="text-sm text-brand-cyan font-mono bg-black/30 px-3 py-2 rounded-lg block">
-              http://localhost:3105/sse
-            </code>
+          <div class="card">
+            <h3>全场景覆盖</h3>
+            <p>场景编辑、Prefab 模式、资源管理、脚本开发 — 完整工作流。</p>
           </div>
+          <div class="card">
+            <h3>DSL 驱动</h3>
+            <p>JSON DSL 描述 UI 结构，Bundle 导入即生成 Prefab，适合批量界面生产。</p>
+          </div>
+          <div class="card">
+            <h3>安全可控</h3>
+            <p>白名单字段、dryRun 预览与操作日志，自动化改动可审计。</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 md:mb-16">
-  <span class="inline-block px-4 py-1.5 mb-4 text-sm font-mono text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 rounded-full">
-      MCP 工具
-    </span>
-  <h2 class="section-title">
-    <span class="gradient-text">16 个标准化工具</span>
-  </h2>
-  <p class="section-subtitle">覆盖场景编辑、资源管理、脚本开发、诊断修复全流程</p>
-</div>
-
-      <div class="flex flex-wrap gap-2 justify-center mb-10">
-        <span class="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-              基础 · 2
-            </span><span class="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-              场景 · 6
-            </span><span class="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-              资源 · 3
-            </span><span class="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-              开发 · 3
-            </span><span class="text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-              诊断 · 2
-            </span>
+    <section class="section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">快速开始</span>
+          <h2 class="display-lg section-title">三步完成接入</h2>
+        </div>
+        <div class="steps fade-in">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3>安装插件</h3>
+            <p>将 creator_ai 放入项目 extensions 目录。</p>
+            <code>client/extensions/creator_ai/</code>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3>启动服务</h3>
+            <p>在 Creator 编辑器中启动 MCP 服务。</p>
+            <code>AI Tools → MCP 服务 → 启动</code>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3>连接端点</h3>
+            <p>配置开发工具连接本地 SSE 端点。</p>
+            <code>http://localhost:3105/sse</code>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        <div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      ping
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-500/20 text-gray-300">
-      基础
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">健康检查，验证 MCP 连接是否正常。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      get_project_info
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-500/20 text-gray-300">
-      基础
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">获取当前 Cocos Creator 项目信息（名称、路径、引擎版本）。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      get_editor_context
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">获取编辑器场景上下文，包括场景名、根节点、脏标记等。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      query_scene_hierarchy
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">查询场景或 Prefab 编辑模式下的节点树结构（深度上限 5）。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      query_node_state
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">按 UUID 查询节点 Transform / UITransform / Sprite 摘要。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      apply_node_patch
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">对白名单字段批量修改节点属性，支持 dryRun 预览。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      save_editor_scene
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">保存当前场景或正在编辑的 Prefab。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      toggle_project_preview
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-purple/20 text-brand-purple">
-      场景
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">启动或刷新 Cocos Creator 游戏预览。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      list_assets
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan">
-      资源
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">列出 db:// 目录下的资源列表，每次最多 200 条。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      import_dsl_bundle
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan">
-      资源
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">将 DSL Bundle 目录导入项目，自动生成 Prefab 并合并资源。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      get_last_dsl_log
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan">
-      资源
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">获取最近一次 DSL 导入日志（状态、路径、错误信息）。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 1</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      script_manager
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400">
-      开发
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">创建、读取、更新、删除、列出 TypeScript 脚本，支持自动编译。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 2</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      component_manager
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400">
-      开发
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">管理节点组件：挂载/卸载、读写属性、创建/删除节点。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 2</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      engine_control
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400">
-      开发
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">引擎级操作：状态查询、脚本刷新、缓存清理、编译状态。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 2</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      console_reader
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-400">
-      诊断
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">读取编辑器控制台日志，支持按级别和关键词过滤。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 3</span>
-</div><div class="glass-card p-5 hover:border-brand-purple/30 transition-all duration-300 group">
-  <div class="flex items-start justify-between mb-3">
-    <code class="text-brand-cyan font-mono text-sm group-hover:text-white transition-colors">
-      scene_file_editor
-    </code>
-    <span class="text-xs px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-400">
-      诊断
-    </span>
-  </div>
-  <p class="text-gray-400 text-sm leading-relaxed mb-3">直接读写 .scene JSON 文件，支持批量修改场景数据。</p>
-  <span class="text-xs text-gray-600 font-mono">Phase 3</span>
-</div>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">MCP 工具</span>
+          <h2 class="display-lg section-title">16 个标准化工具</h2>
+          <p class="section-desc">覆盖基础、场景、资源、开发与诊断五类能力。</p>
+        </div>
+        <div class="card-grid cols-4 fade-in" style="margin-bottom:1.5rem">
+          <span class="tool-cat" style="padding:0.5rem 0">基础 · 2</span>
+          <span class="tool-cat" style="padding:0.5rem 0">场景 · 6</span>
+          <span class="tool-cat" style="padding:0.5rem 0">资源 · 3</span>
+          <span class="tool-cat" style="padding:0.5rem 0">开发 · 3 · 诊断 · 2</span>
+        </div>
+        <div class="card-grid cols-4 fade-in">
+          <div class="tool-card"><div class="flex-between"><code>ping</code><span class="tool-cat">基础</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">健康检查，验证 MCP 连接。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>get_project_info</code><span class="tool-cat">基础</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取项目名称、路径与引擎版本。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>get_editor_context</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取编辑器场景上下文。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>query_scene_hierarchy</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">查询节点树结构（深度上限 5）。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>query_node_state</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">按 UUID 查询节点属性摘要。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>apply_node_patch</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">白名单字段批量修改，支持 dryRun。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>save_editor_scene</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">保存当前场景或 Prefab。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>toggle_project_preview</code><span class="tool-cat">场景</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">启动或刷新游戏预览。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>list_assets</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">列出 db:// 目录资源。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>import_dsl_bundle</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">导入 DSL Bundle 生成 Prefab。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>get_last_dsl_log</code><span class="tool-cat">资源</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">获取最近 DSL 导入日志。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>script_manager</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">TypeScript 脚本 CRUD 与编译。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>component_manager</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">组件挂载、属性读写、节点操作。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>engine_control</code><span class="tool-cat">开发</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">引擎状态、脚本刷新、缓存清理。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>console_reader</code><span class="tool-cat">诊断</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">读取控制台日志，支持过滤。</p></div>
+          <div class="tool-card"><div class="flex-between"><code>scene_file_editor</code><span class="tool-cat">诊断</span></div><p style="font-size:0.8125rem;color:var(--ink-muted);margin:0.5rem 0 0">直接读写 .scene JSON 文件。</p></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="py-16 bg-brand-light/20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 md:mb-16">
-  <span class="inline-block px-4 py-1.5 mb-4 text-sm font-mono text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 rounded-full">
-      架构
-    </span>
-  <h2 class="section-title">
-    <span class="gradient-text">MCP 通信架构</span>
-  </h2>
-  
-</div>
-
-      <div class="glass-card p-6 md:p-8 font-mono text-sm overflow-x-auto max-w-4xl mx-auto">
-        <pre class="text-gray-300 leading-relaxed"><code>┌─────────────┐     SSE/HTTP      ┌──────────────────┐
-│  AI Agent   │ ◄──────────────► │  creator_ai MCP  │
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="eyebrow">架构</span>
+          <h2 class="display-lg section-title" style="color:var(--canvas)">MCP 通信模型</h2>
+        </div>
+        <div class="diagram fade-in" style="text-align:center">
+┌─────────────┐     SSE/HTTP      ┌──────────────────┐
+│  Dev Agent  │ ◄──────────────► │  creator_ai MCP  │
 │  (Cursor)   │   MCP Protocol    │  Server :3105    │
 └─────────────┘                   └────────┬─────────┘
                                            │ Editor API
                                   ┌────────▼─────────┐
                                   │ Cocos Creator    │
                                   │ 3.8.8 Editor     │
-                                  └──────────────────┘</code></pre>
-      </div>
-    </div>
-  </section>
-
-      </main>
-      <footer class="bg-brand-surface border-t border-white/5">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-3 mb-4">
-          <img src="/ai-npc-workspace/logo.svg" alt="灵境智能" class="w-8 h-8">
-          <div>
-            <span class="text-lg font-bold text-white">灵境智能</span>
-            <span class="block text-xs text-gray-500 font-mono">AI for NPC</span>
-          </div>
+                                  └──────────────────┘
         </div>
-        <p class="text-gray-400 text-sm max-w-md leading-relaxed">
-          AI 赋能每一个游戏角色，让每个 NPC 都有灵魂。我们致力于开发 AI 时代伟大的游戏。
-        </p>
       </div>
+    </section>
 
-      <div>
-        <h4 class="text-white font-semibold mb-4 text-sm">导航</h4>
-        <ul class="space-y-2">
-          <li><a href="/ai-npc-workspace/" class="text-gray-400 hover:text-brand-cyan text-sm transition-colors">首页</a></li>
-          <li><a href="/ai-npc-workspace/product" class="text-gray-400 hover:text-brand-cyan text-sm transition-colors">产品</a></li>
-          <li><a href="/ai-npc-workspace/about" class="text-gray-400 hover:text-brand-cyan text-sm transition-colors">关于我们</a></li>
-        </ul>
+    <section class="cta-band">
+      <div class="container fade-in">
+        <h2>准备接入你的项目？</h2>
+        <p>查看仓库 README 获取完整安装说明，或通过邮件联系我们获取试点支持。</p>
+        <a href="https://github.com/aifornpc/ai-npc-workspace" target="_blank" rel="noopener" class="btn btn-accent">前往 GitHub</a>
       </div>
+    </section>
+  </main>
 
-      <div>
-        <h4 class="text-white font-semibold mb-4 text-sm">产品</h4>
-        <ul class="space-y-2">
-          <li><span class="text-gray-400 text-sm">creator_ai · 灵境引擎</span></li>
-          <li><span class="text-gray-400 text-sm">soul_npc · 灵魂 NPC</span></li>
-          <li><span class="text-gray-400 text-sm">agent_hub · 灵境工坊</span></li>
-        </ul>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../" class="brand">
+            <div class="brand-mark"><span>灵</span></div>
+            <div><div class="brand-name">灵境智能</div><div class="brand-tag">AI for NPC</div></div>
+          </a>
+          <p class="footer-desc">为游戏角色构建记忆、语境与行为系统。</p>
+        </div>
+        <div class="footer-col"><h4>导航</h4><ul><li><a href="../">首页</a></li><li><a href="./">产品</a></li><li><a href="../about/">关于</a></li></ul></div>
+        <div class="footer-col"><h4>产品</h4><ul><li><span>creator_ai</span></li><li><span>soul_npc</span></li><li><span>agent_hub</span></li></ul></div>
       </div>
+      <div class="footer-bottom"><span>© 2026 灵境智能</span><span>成立于 2026-06-12</span></div>
     </div>
-
-    <div class="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p class="text-gray-500 text-sm">
-        &copy; 2026 灵境智能 (AI for NPC). All rights reserved.
-      </p>
-      <p class="text-gray-600 text-xs font-mono">
-        成立于 2026-06-12 · 让每个 NPC 都有灵魂
-      </p>
-    </div>
-  </div>
-</footer>
-    </div>
-  </body></html>
+  </footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
